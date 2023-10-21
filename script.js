@@ -13,6 +13,7 @@ for (let i= 0; i < musicPlay.length; i++) {
   musicTag.addEventListener('click', () => {
     musicId = musicPlay[i].musicId
     audioTag.src = musicId
+    audioTag.play()
   })
   musicTag.classList.add('box')
   const title = document.createTextNode((i + 1).toString() + '.' + musicPlay[i].title);
